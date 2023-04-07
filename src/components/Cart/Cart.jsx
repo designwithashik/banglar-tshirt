@@ -13,6 +13,7 @@ const Cart = ({ cart, handleRemoveCart }) => {
     return (
         <div>
             {message}
+            <p className={`border ${cart.length>= 5? 'red': 'purple'}`}>Backslash</p>
             <h2 className={cart.length >=5?'blue' : 'red'}>Order Summary : {cart.length}</h2>
             {cart.length > 2 ? <p>Aro kino</p> : <p>Gorib</p>}
             {cart.length === 3 && <p>Triple Tri</p>}
